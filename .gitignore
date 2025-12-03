@@ -19,3 +19,63 @@ target
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# ---------------------------
+# Build artifacts
+# ---------------------------
+/bin/
+/build/
+/out/
+/target/
+/obj/
+/*.o
+*.obj
+*.tmp
+*.map
+*.lst
+*.bin
+*.img
+*.iso
+
+# Bootloader artifacts
+bootloader/*.bin
+bootloader/*.o
+bootloader/*.elf
+
+# Kernel outputs
+kernel/*.bin
+kernel/*.elf
+kernel/*.o
+kernel/**/*.o
+kernel/**/*.bin
+kernel/**/*.elf
+
+# Linker output
+*.ld.out
+*.map
+
+# Cargo (Rust kernel 사용 시)
+target/
+Cargo.lock
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+
+# OS runtime generated files
+*.dump
+*.core
+
+# Debugger artifacts
+.gdb_history
+.gdbinit
+
+# QEMU artifacts
+qemu.log
